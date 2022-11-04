@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --main-color: #fff;
+  --accent-color: #2ee0ff;
+  --background-color: #1f2833;
+  --background-color-dark: #1b222b;
+  --box-shadow: rgba(14, 22, 32, 0.15);
+  /* --box-shadow-light: ; */
+  --box-shadow-hover: rgba(14, 22, 32, 0.13);
 }
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "roboto slab";
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 95vh;
+
+  font-size: 2rem;
+  font-family: "roboto slab";
+  background-color: var(--background-color);
+  color: var(--main-color);
+
+  transition: 0.3s background-color;
+}
+span {
+  color: #2ee0ff;
 }
