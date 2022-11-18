@@ -58,7 +58,7 @@ const SignIn = (props) => {
         return data;
       })
       .then((data) => {
-        if (isCool) goToPage("/Test");
+        if (isCool) goToPage("/panel");
       });
   }
 
